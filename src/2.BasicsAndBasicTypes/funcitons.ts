@@ -1,4 +1,4 @@
-function add(n1: number, n2: number): number {
+function add3(n1: number, n2: number): number {
     return n1 + n2;
 }
 
@@ -15,11 +15,11 @@ addAndHandle(10, 20, (result) => {
     console.log(`Result addAndHandle: ${result}`);
 });
 
-printResult(add(5, 12));
+printResult(add3(5, 12));
 
 // let combineValues: () => number; //creating a function type (take no parameter and return number)
 let combineValues: (a: number, b: number) => number;
 
-combineValues = add;
+combineValues = add3;
 
 console.log(combineValues(8, 8));
