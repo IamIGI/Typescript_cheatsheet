@@ -92,6 +92,8 @@ console.log(storedData);
 // const v1 = new Car();
 // const v2 = new Truck();
 
+//type guard - cehcking types before you try to do something with the values
+
 // function useVehicle(vehicle: Vehicle) {
 //     vehicle.drive();
 //     //type guard (works only if class is declared)
