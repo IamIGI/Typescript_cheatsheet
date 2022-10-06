@@ -55,7 +55,7 @@ function extractAndConvert<T extends object, U extends keyof T>(obj: T, key: U) 
 extractAndConvert({ name: 'Max' }, 'name');
 
 //Generics classes
-
+// you got a choose once what type of data you want to use
 class DataStorage<T extends string | number | boolean> {
     private data: T[] = [];
 
@@ -112,3 +112,5 @@ function createCourseFoal(title: string, description: string, date: Date): Cours
 const names: Readonly<string[]> = ['Max', 'Igor'];
 // names.push('Manu')
 // names.pop();
+
+//generics vs unions types
